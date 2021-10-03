@@ -3,22 +3,22 @@ package com.bohana;
 public class Main {
 
     public static void main(String[] args) {
-	    Team<SoccerPlayer> barcelona = new Team<>("Barcelona");
-	    Team<SoccerPlayer> realMadrid = new Team<>("Real Madrid");
+	Team<SoccerPlayer> barcelona = new Team<>("Barcelona");
+	Team<SoccerPlayer> realMadrid = new Team<>("Real Madrid");
 
-	    Team<CounterStrikePlayer> luminosityGaming = new Team<>("Luminosity Gaming");
-	    Team<CounterStrikePlayer> astralis = new Team<>("Astralis");
+	Team<CounterStrikePlayer> luminosityGaming = new Team<>("Luminosity Gaming");
+	Team<CounterStrikePlayer> astralis = new Team<>("Astralis");
 
-	    League<Team<CounterStrikePlayer>> counterStrikeLeague = new League<>("Random Major Championship");
-	    League<Team<SoccerPlayer>> championsLeague = new League<>("Champions League");
+	League<Team<CounterStrikePlayer>> counterStrikeLeague = new League<>("Random Major Championship");
+	League<Team<SoccerPlayer>> championsLeague = new League<>("Champions League");
 
-	    counterStrikeLeague.addTeam(luminosityGaming);
-	    counterStrikeLeague.addTeam(astralis);
-	    championsLeague.addTeam(barcelona);
-	    championsLeague.addTeam(realMadrid);
+	counterStrikeLeague.addTeam(luminosityGaming);
+	counterStrikeLeague.addTeam(astralis);
+	championsLeague.addTeam(barcelona);
+	championsLeague.addTeam(realMadrid);
 
-	    //adding players to the teams
-	    luminosityGaming.addPlayer(new CounterStrikePlayer("Fallen", "AWP"));
+	//adding players to the teams
+	luminosityGaming.addPlayer(new CounterStrikePlayer("Fallen", "AWP"));
         luminosityGaming.addPlayer(new CounterStrikePlayer("FNX", "AK-47"));
 
         astralis.addPlayer(new CounterStrikePlayer("dev1ce", "AWP"));
